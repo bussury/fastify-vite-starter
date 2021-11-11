@@ -1,0 +1,20 @@
+{
+  "type": "module",
+  "name": "vue-base",
+  "private": true,
+  "scripts": {
+    "dev": "node server.js",
+    "watch": "nodemon server.js",
+    "devinstall": "zx ../../devinstall.mjs vue-base",
+    "build": "node server.js build",
+    "serve": "cross-env NODE_ENV=production node server.js",
+    "debug": "node --inspect-brk server.js"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "fastify": "^3.23.1",
+    "fastify-vite": "^2.2.3",
+    "fastify-vite-vue": "^2.2.3",
+    "nodemon": "^2.0.15"
+  }
+}

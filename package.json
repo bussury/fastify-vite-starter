@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "cross-env": "^7.0.3",
-    "fastify": "^3.23.1",
+    "fastify": "^3.24.0",
     "fastify-vite": "^2.2.3",
     "fastify-vite-vue": "^2.2.3",
     "nodemon": "^2.0.15"

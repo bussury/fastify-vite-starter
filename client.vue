@@ -17,6 +17,23 @@ export default {
   	if (head) {
   		useHead(head)
   	}
+     useHead({
+      htmlAttrs:{
+        lang:'en'
+      },
+      title: 'Vite App',
+      meta: [{
+        charset: 'utf-8',
+        content: 'text/html'
+      }, {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1.0',
+      },
+      {
+        name: 'description',
+        content: 'school management system',
+      }]
+    })
     return { hydrationDone, route: useRoute() }
   },
 }

@@ -10,7 +10,7 @@ async function main () {
   await app.register(FastifyVite, { root, renderer })
 
   await app.vite.get('/*')
-  await app.vite.ready()
+  await app.vite.commands()
 
   return app
 }

@@ -2,8 +2,8 @@ import { createSSRApp } from 'vue'
 import { createMemoryHistory, createRouter, createWebHistory } from 'vue-router'
 import { createHead } from '@vueuse/head'
 
-import base from '@app/client.vue'
-import routes from '@app/routes.js'
+import base from './client.vue'
+import routes from './routes.js'
 
 export async function createApp (ctx) {
   const resolvedRoutes = await routes()

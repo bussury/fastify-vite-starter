@@ -5,12 +5,23 @@ import renderer from 'fastify-vite-vue'
 
 async function main () {
   const app = Fastify()
-  const root = import.meta.url
+  const root = process.cwd()
 
-  await app.register(FastifyVite, { root, renderer })
+  await app.register(FastifyVite, { 
+    root, 
+    renderer,
+    // entry: {
+    //   server: '/entry/server.js'
+    // },
+    entry: {
+      client: '/entry/client.js',
+      server: '/entry/server.js'
+    },
+  })
 
-  await app.vite.get('/*')
-  await app.vite.commands()
+  await app.vite.ready();
+  // await app.vite.get('/*')
+  // await app.vite.commands()
 
   return app
 }

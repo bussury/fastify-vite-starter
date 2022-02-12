@@ -1,4 +1,4 @@
-import { createApp } from '@app/client.js'
+import { createApp } from '../client.js'
 import { hydrate } from 'fastify-vite-vue/client.mjs'
 
 createApp().then(({ app, router }) => {

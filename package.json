@@ -12,17 +12,17 @@
   },
   "dependencies": {
     "cross-env": "^7.0.3",
-    "fastify": "^4.0.1",
+    "fastify": "^4.2.1",
     "fastify-api": "^0.2.0",
     "fastify-vite": "^2.3.1",
     "fastify-vite-vue": "^3.0.0",
-    "vite": "^2.9.12",
+    "vite": "^3.0.0",
     "vue": "^3.2.37",
-    "vue-router": "^4.0.16",
-    "nodemon": "^2.0.16"
+    "vue-router": "^4.1.2",
+    "nodemon": "^2.0.19"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^2.3.3",
-    "@vitejs/plugin-vue-jsx": "^1.3.10"
+    "@vitejs/plugin-vue": "^3.0.0",
+    "@vitejs/plugin-vue-jsx": "^2.0.0"
   }
 }
